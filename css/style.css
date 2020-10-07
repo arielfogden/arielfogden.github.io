@@ -16,11 +16,10 @@ main,
 header h1,
 nav div {
   width: 85%;      
-  margin: auto;
 }
 header {
-  padding-top: 80px;
-  padding-bottom: 40px;
+
+  width: 40%;
 }
 nav a {
   padding-right: 40px;
@@ -31,4 +30,16 @@ nav a:hover {
 }
 nav {
   padding-bottom: 40px;
+}
+
+.projectimage {
+  width: 400px
+}
+
+.layout {
+  margin: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: baseline;
 }
