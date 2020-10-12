@@ -15,15 +15,13 @@ h2,
 h3 {
   font-size: 23px;
   font-family: Arial, Helvetica, sans-serif}
-main{
-  padding-left: 40px;
-}
+main,
 header h1,
 nav div {
   width: 85%;      
 }
 header {
-  width: 30vw;
+  width: 40%;
   height: 800px;
   background-image: url("../images/banners/mapglitch1.png")
 }
