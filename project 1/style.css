@@ -85,6 +85,18 @@ ul{
     align-items: center;    
 }
 
+.second #header {
+    background: #D8F3FF;
+}
+
+.third #header {
+    background: #FFFADD;
+}
+
+.fourth #header {
+    background: #E4F6DB;
+}
+
 /*Main Content Layout*/
 
 .layout{
@@ -124,6 +136,15 @@ ul{
     position: absolute;
     color: white;
     padding-left: 4em;
+}
+
+.home #main-menu a {
+    color: white;
+}
+
+.home #main-menu a:hover {
+
+    border-bottom: 3px solid white;
 }
 
 #home-h1 {
