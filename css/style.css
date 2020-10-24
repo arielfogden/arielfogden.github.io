@@ -82,3 +82,23 @@ input[type="text"], input[type="email"] {
   margin-top: 50px;
 }
 
+
+.contactthanks{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30vh;
+  font-size: 100px;
+  padding-bottom: 30vh;
+}
+
+.contactthanks p{
+  margin-bottom: 0;
+  line-height: 100px;
+}
+
+.contactthanks a{
+  font-size: 10px;
+  padding-top: 0;
+}
