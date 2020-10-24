@@ -44,11 +44,12 @@ ul{
 	width:25%;
     float:left;
     list-style-type: none;
+    text-align: center;
 }
 
 
 #main-menu a {
-	display:block;
+	display:inline;
 	/*padding:3px;*/
 	text-decoration:none;
     color: black;
