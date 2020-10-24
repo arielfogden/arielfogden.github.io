@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact Me</title>
 </head>
-<body>
+<body class="contact">
+    <h1>Contact Me!</h1>
     <form action="https://getsimpleform.com/messages?form_api_token=fe96f72d88acfa2d7f048107065e49c6" method="post">
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
         <input type='hidden' name='redirect_to' value='<http://arielfogden.github.io/contact-thanks.html>' />
         <!-- all your input fields here.... -->
-        <label for="first-name"> First Name</label><input type='text' name='first-name' /> <br>
-        <label for="email">Email</label><input type='email' name='email' /> <br>
-        <input type='submit' value='Test form' />
+        <label  for="first-name"> First Name</label> <br> <input  type='text' name='first-name' /> <br> <br>
+        <label  for="email">Email</label> <br> <input  type='email' name='email' /> <br> <br>
+        <input  type='submit' value='Submit' class="button" />
       </form>
             
 </body>

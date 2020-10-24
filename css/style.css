@@ -47,3 +47,38 @@ nav {
   display: flex;
   align-items: baseline;
 }
+
+.contact{
+  display: flex;
+  align-content: center;
+}
+
+.contact h1{
+  margin: 10%;
+  width: 20%;
+}
+
+.contact form{
+  margin: 10%;
+  font-size: 17px;
+  width: 80%;
+  margin-left: 0;
+}
+
+input[type="text"], input[type="email"] {
+  width: 400px;
+  height: 20px;
+}
+
+.button{
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin-top: 50px;
+}
+
