@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: forma-djr-text, sans-serif;
     font-size: 27px;
     margin: 0;
 }
@@ -54,18 +54,23 @@ ul{
 	text-decoration:none;
     color: black;
     text-align: center;
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 
 #main-menu a:hover {
 
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
 }
 
 #main-menu a:active {
 
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
 }
+
+#main-menu .current{
+    border-bottom: 4px solid black;
+}
+
 
 /*Header (top nav)*/
 
@@ -135,6 +140,7 @@ ul{
 
 
 .home-header{
+    font-family: forma-djr-deck, sans-serif;
     display: inline-block;
     position: absolute;
     color: white;
@@ -147,7 +153,7 @@ ul{
 
 .home #main-menu a:hover {
 
-    border-bottom: 3px solid white;
+    border-bottom: 4px solid white;
 }
 
 #home-h1 {
@@ -158,8 +164,8 @@ ul{
 }
 
 #home-h2{
-    padding-top: .6em;
-    line-height: 30px;
+    padding-top: 1.4em;
+    line-height: 50px;
     padding-left: .2em;
    
 }
