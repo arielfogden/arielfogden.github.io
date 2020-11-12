@@ -1,0 +1,176 @@
+/* GLOBAL */
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    font-size: 17px;
+}
+
+h1{
+    font-size: 46px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 37px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* HEADER */
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    background: black;
+}
+
+.logo {
+    height: 10vh;
+    min-height: 70px;
+
+}
+
+nav {
+    margin: 3vh;
+    width: 70%;
+    float: right;
+    text-align: right;
+    font-size: 37px;
+}
+
+
+/* HOME MAIN */
+
+.home-main {
+    margin-top: 10vh;
+}
+
+.home-events {
+    padding: 5vh;
+}
+
+.home-news {
+    padding: 5vh;
+}
+
+hr {
+    border-top: 2px solid yellow;
+    border-bottom: none;
+}
+
+/* NEWS MAIN */
+
+.news-main {
+    margin-top: 12vh;
+}
+
+.news-block {
+    padding: 5vh;
+}
+
+.news-main hr {
+    border-top: 10px solid white;
+    width: 10%;
+}
+
+
+/* ARTICLE MAIN */
+
+.article-main {
+    margin-top: 12vh;
+    padding: 5vh;
+}
+
+.article-caption {
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.newsletter-signup {
+    text-align: center;
+    align-content: center;
+}
+
+footer {
+    padding: 5vh;
+    margin-bottom: 7vh;
+}
+
+.footer-meta {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vh;
+}
+
+.copyright{
+    float: left;
+    width: 40%;
+}
+
+.donation{
+    float: right;   
+    width: 40%;
+    text-align: right;
+}
+
+
+/* STREAMING BAR */
+
+.streaming-bar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    background: black;
+    border: 1px solid yellow;
+    height: 70px;
+
+}
+
+#play-pause {
+    width: 70px;
+    float: left;
+    border-right: 1px solid yellow;
+}
+
+#streaming-info{
+    max-width: 90%;
+    float: right;
+    text-align: left;
+    line-height: 8px;
+   
+}
+
+#streaming-info p {
+    font-size: 8px;
+   
+}
+
+#streaming-options{
+    display: none;
+}
+
+
