@@ -38,8 +38,8 @@ button {
     color: black;
     font-size: 17px;
     border: none;
-    width: 24vw;
-    height: 7vw;
+    width: 160px;
+    height: 40px;
 }
 
 
@@ -73,7 +73,7 @@ img {
 
 .ham {
     position: absolute;
-    right: 3vh;
+    right: 2vw;
     background-color: black;
     box-sizing: border-box;
     border: none;
