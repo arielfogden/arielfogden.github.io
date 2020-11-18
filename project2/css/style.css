@@ -10,53 +10,119 @@ body {
 }
 
 h1{
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 400;
 }
 
 h2{
-    font-size: 37px;
+    font-size: 32px;
     font-weight: 400;
 }
 
 h3{
-    font-size: 21px;
+    font-size: 27px;
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
+a:hover{
+    color: yellow;
+}
 
+button {
+    background: yellow;
+    color: black;
+    font-size: 17px;
+    border: none;
+    width: 24vw;
+    height: 7vw;
+}
 
 
 /* HEADER */
 
 img {
+    box-sizing: border-box;
     max-width: 100%;
 }
 
-.header {
+.top-nav {
     position: fixed;
     top: 0;
-    display: block;
+    display: inline-block;
+    height: 10vh;
     width: 100%;
     margin: 0;
     background: black;
+    align-items: center;
 }
 
 .logo {
     height: 10vh;
     min-height: 70px;
-
+    box-sizing: border-box;
 }
+
+
+
+/* mobile nav */
+
+.ham {
+    position: absolute;
+    right: 3vh;
+    background-color: black;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    height: 10vh;
+    font-size: 32px;
+    text-align: right;
+    
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateX(100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.4s ease;
+  }
+
+  .showNav {
+    /* show the menu */
+    display: unset;
+    transform: translateX(0);
+  }
 
 nav {
     margin: 3vh;
-    width: 70%;
-    float: right;
-    text-align: right;
+    width: 100%;
+    float: left;
+    text-align: left;
     font-size: 37px;
 }
 
+.navbar {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    margin-top: 10vh;
+    padding: 3vh;
+}
 
 /* HOME MAIN */
 
@@ -73,8 +139,13 @@ nav {
 }
 
 hr {
+    border: none;
     border-top: 2px solid yellow;
-    border-bottom: none;
+   
+}
+
+#home-news-title{
+    color: yellow;
 }
 
 /* NEWS MAIN */
@@ -101,7 +172,16 @@ hr {
 }
 
 .article-caption {
+    box-sizing: border-box;
+    padding: 8vh;
+    padding-top: 0;
     font-size: 14px;
+}
+
+.article-image {
+    box-sizing: border-box;
+    padding: 8vh;
+    padding-bottom: 2vh;
 }
 
 
@@ -145,7 +225,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     background: black;
-    border: 1px solid yellow;
+    border-top: 2px solid yellow;
     height: 70px;
 
 }
@@ -153,15 +233,14 @@ footer {
 #play-pause {
     width: 70px;
     float: left;
-    border-right: 1px solid yellow;
+    border-right: 2px solid yellow;
+    text-align: center;
 }
 
 #streaming-info{
     max-width: 90%;
-    float: right;
-    text-align: left;
-    line-height: 8px;
-   
+    line-height: 0px;
+    padding: 2vh;
 }
 
 #streaming-info p {
