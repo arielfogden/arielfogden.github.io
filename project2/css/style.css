@@ -24,6 +24,11 @@ h3{
     font-weight: 400;
 }
 
+h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -134,9 +139,24 @@ nav {
     padding: 5vh;
 }
 
+.event-listing{
+    padding-top: 1vh;
+}
+
+.event-date{
+    padding-top: 2vh;
+    line-height: 200%;
+    margin-bottom: 0;
+}
+
+.event-name{
+    margin-top: 0;
+}
+
 .home-news {
     padding: 5vh;
 }
+
 
 hr {
     border: none;
@@ -146,6 +166,7 @@ hr {
 
 #home-news-title{
     color: yellow;
+    margin-bottom: 1vh;
 }
 
 /* NEWS MAIN */
@@ -190,6 +211,7 @@ hr {
 .newsletter-signup {
     text-align: center;
     align-content: center;
+    padding-bottom: 5vh;
 }
 
 footer {
@@ -198,20 +220,21 @@ footer {
 }
 
 .footer-meta {
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    padding: 5vh;
+    
+    color: yellow;
 }
 
 .copyright{
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 .donation{
     float: right;   
-    width: 40%;
+    width: 50%;
     text-align: right;
 }
 
