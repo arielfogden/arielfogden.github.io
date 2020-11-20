@@ -1,31 +1,40 @@
 /* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-
     font-size: 17px;
+    line-height: 1.4rem;
 }
 
 h1{
-    font-size: 42px;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
     font-weight: 400;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 2rem;
+    line-height: 2.2rem;
     font-weight: 400;
 }
 
 h3{
-    font-size: 27px;
+    font-size: 1.8rem;
+    line-height: 2rem;
     font-weight: 400;
 }
 
 h4{
-    font-size: 14px;
+    font-size: .8rem;
+    line-height: 1.2rem;
     font-weight: 400;
 }
 
@@ -51,7 +60,6 @@ button {
 /* HEADER */
 
 img {
-    box-sizing: border-box;
     max-width: 100%;
 }
 
@@ -69,7 +77,6 @@ img {
 .logo {
     height: 10vh;
     min-height: 70px;
-    box-sizing: border-box;
 }
 
 
@@ -80,7 +87,6 @@ img {
     position: absolute;
     right: 2vw;
     background-color: black;
-    box-sizing: border-box;
     border: none;
     color: white;
     height: 10vh;
@@ -118,15 +124,19 @@ nav {
     float: left;
     text-align: left;
     font-size: 37px;
+    line-height: 5rem;
 }
 
 .navbar {
     position: absolute;
-    box-sizing: border-box;
     width: 100%;
     margin: 0;
     margin-top: 10vh;
     padding: 3vh;
+}
+
+.navbar button {
+    margin-top: 2rem;
 }
 
 /* HOME MAIN */
@@ -136,27 +146,40 @@ nav {
 }
 
 .home-events {
-    padding: 5vh;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 .event-listing{
-    padding-top: 1vh;
+    padding-top: 2rem;
 }
 
 .event-date{
-    padding-top: 2vh;
-    line-height: 200%;
+    padding-top: 2rem;
+    line-height: 2rem;
     margin-bottom: 0;
 }
 
 .event-name{
     margin-top: 0;
+    padding-bottom: 1rem;
 }
 
 .home-news {
-    padding: 5vh;
+    padding: 2rem;
 }
 
+.home-news h2 {
+    padding-bottom: 1rem;
+}
+
+.home-news p {
+    padding-bottom: 1rem;
+}
+
+.home-news img {
+    padding: 1rem;
+}
 
 hr {
     border: none;
@@ -166,13 +189,15 @@ hr {
 
 #home-news-title{
     color: yellow;
-    margin-bottom: 1vh;
+
 }
 
 /* NEWS MAIN */
 
 .news-main {
-    margin-top: 12vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-block {
@@ -181,29 +206,49 @@ hr {
 
 .news-main hr {
     border-top: 10px solid white;
-    width: 10%;
+    width: 20%;
+    padding-bottom: 3vh;
+    margin-left: 0;
+    
 }
+
+.news-main h2{
+    padding-bottom: 1rem;
+}
+
+.news-main img {
+    padding: 2vh;
+}
+
 
 
 /* ARTICLE MAIN */
 
 .article-main {
-    margin-top: 12vh;
+    margin-top: 3rem;
     padding: 5vh;
 }
 
 .article-caption {
-    box-sizing: border-box;
-    padding: 8vh;
+    padding: 4rem;
     padding-top: 0;
+    padding-bottom:0;
     font-size: 14px;
 }
 
 .article-image {
-    box-sizing: border-box;
     padding: 8vh;
     padding-bottom: 2vh;
 }
+
+.article-main p{
+    padding-top: 2rem;
+}
+
+#article-1-hero {
+    padding: 2rem;
+}
+
 
 
 /* FOOTER */
@@ -211,17 +256,21 @@ hr {
 .newsletter-signup {
     text-align: center;
     align-content: center;
-    padding-bottom: 5vh;
+    padding-bottom: 8rem;
+}
+
+.newsletter-signup h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer {
     padding: 5vh;
-    margin-bottom: 7vh;
+    margin-bottom: 4rem;
 }
 
 .footer-meta {
     display: inline-block;
-    box-sizing: border-box;
     width: 100%;
     
     color: yellow;
@@ -245,7 +294,6 @@ footer {
     position: fixed;
     bottom: 0;
     display: flex;
-    box-sizing: border-box;
     width: 100%;
     background: black;
     border-top: 2px solid yellow;
@@ -258,11 +306,11 @@ footer {
     float: left;
     border-right: 2px solid yellow;
     text-align: center;
+    line-height: 4rem;
 }
 
 #streaming-info{
     max-width: 90%;
-    line-height: 0px;
     padding: 2vh;
 }
 
