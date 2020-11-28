@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHMD Jazz Radio</title>
     <link rel="stylesheet" href="css/style.css" />
+
+        <!--  Essential META Tags -->
+
+        <meta property="og:title" content="KMHD Jazz Radio">
+        <meta property="og:description" content="Jazz radio brought to you by a partnership between Mt. Hood Community College and OPB.">
+        <meta property="og:image" content="http://arielfogden.github.io/project2/home-images/thumbs/homepage.png">
+        <meta property="og:url" content="http://arielfogden.github.io/project2/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+    
+    
+        <!--  Non-Essential, But Recommended -->
+    
+        <meta property="og:site_name" content="KMHD Jazz Radio">
+        <meta name="twitter:image:alt" content="KMHD Jazz Radio Homepage">
     
 </head>
 
@@ -80,10 +94,13 @@
     </footer>
 
     <aside class=streaming-bar>
-        <div id="play-pause">
+
+        <audio id="play-pause" class="audio">
+            <source src="jazzsong.mp3" id="jazz-song"></source>
             <h2>></h2>
-        </div>
-        <div id=streaming-info>
+        </audio>
+
+        <div id="streaming-info">
             <p>NOW STREAMING</p>
             <h2>Song Name / Artist</h2>
         </div>
