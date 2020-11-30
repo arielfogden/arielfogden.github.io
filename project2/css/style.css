@@ -214,6 +214,7 @@ hr {
     flex-direction: column;
 }
 
+
 .news-block {
     padding: 5vh;
 }
@@ -431,15 +432,21 @@ footer {
         box-sizing: border-box;
     }
 
+    .news-grid, .feature-grid {
+        display: flex;
+    }
     .news-block{
-        width: 50%;
+        flex: 50%;
     }
 
-    #news-block-1{
+    .news-block-1{
         width: 100%;
+        order: 2;
         /* display: flex; */
     }
-
+    .feature-image {
+        order: 1;
+    }
 
     .article-main {
         width: 60%;
