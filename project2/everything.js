@@ -19,3 +19,19 @@ menuLinks.forEach(
     menuLink.addEventListener("click", toggleHamburger) 
   }
 )
+
+
+
+// STREAMING BAR //
+
+var play = $("#jazz-song")[0];
+$("#play-pause").click(function() {
+    audio.play();
+});
+
+
+
+//var audio = $("#mySoundClip")[0];
+//$("nav a").mouseenter(function() {
+  //audio.play();
+//});
