@@ -156,7 +156,7 @@ nav {
 .home-opener {
     margin-top: 2rem;
     padding: 5rem;
-    visibility: hidden;
+    display: none;
 }
 
 .home-events {

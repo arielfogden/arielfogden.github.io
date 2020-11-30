@@ -24,10 +24,10 @@ menuLinks.forEach(
 
 // STREAMING BAR //
 
-var play = $("#jazz-song")[0];
-$("#play-pause").click(function() {
-    audio.play();
-});
+// var play = $("#jazz-song")[0];
+// $("#play-pause").click(function() {
+//     audio.play();
+// });
 
 
 
