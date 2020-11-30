@@ -36,6 +36,14 @@ nav {
   padding-bottom: 40px;
 }
 
+.audio-section {
+  width: 40%;
+  /* border: 1px solid black; */
+  margin: 20px;
+  padding: 20px;
+}
+
+
 .projectimage {
   width: 400px
 }
@@ -80,6 +88,11 @@ input[type="text"], input[type="email"] {
   display: inline-block;
   font-size: 17px;
   margin-top: 50px;
+}
+
+.button:hover {
+  background-color: lavender;
+  color: black;
 }
 
 
