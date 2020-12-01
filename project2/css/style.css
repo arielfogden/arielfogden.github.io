@@ -183,6 +183,14 @@ nav {
     padding: 2rem;
 }
 
+.home-news hr {
+    border-top: 10px solid white;
+    width: 20%;
+    padding-bottom: 3vh;
+    margin-left: 0;
+    
+}
+
 .home-news h2 {
     padding-bottom: 1rem;
 }
@@ -321,6 +329,7 @@ footer {
     width: 70px;
     float: left;
     border-right: 2px solid yellow;
+    font-size: 2rem;
     text-align: center;
     line-height: 4rem;
 }
@@ -398,6 +407,10 @@ footer {
 
 
     /* HOME */
+
+    main {
+        margin: 0 5rem;
+    }
     
     .home-main {
         display: flex;
@@ -409,7 +422,7 @@ footer {
         display: initial;
         width: 100%;
         margin: auto;
-        padding: 10rem 20rem;
+        padding: 10rem 12rem;
     }
 
     .visualizer {
@@ -434,6 +447,7 @@ footer {
 
     .news-grid, .feature-grid {
         display: flex;
+        margin-bottom: 5rem;
     }
     .news-block{
         flex: 50%;
@@ -446,6 +460,9 @@ footer {
     }
     .feature-image {
         order: 1;
+        padding: 2vh;
+        width: 70%;
+        
     }
 
     .article-main {

@@ -35,3 +35,22 @@ menuLinks.forEach(
 //$("nav a").mouseenter(function() {
   //audio.play();
 //});
+
+
+var music = $("#jazz-song")[0];
+    
+$("#music-button").click(function() {
+    if ($('audio#jazz-song')[0].paused == false ){
+    music.pause();
+    } else {
+    music.play();
+    }
+});
+
+
+$("#music-button").on("click", function() {
+  var el = $(this);
+  el.text() == el.data("text-swap") 
+    ? el.text(el.data("text-original")) 
+    : el.text(el.data("text-swap"));
+});
