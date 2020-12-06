@@ -372,6 +372,11 @@ footer {
     padding-right: 2rem;
 }
 
+.marquee{
+    overflow: hidden;
+}
+
+/* 
 .marquee {
     margin: 0 auto;
     margin-left: 10rem;
@@ -398,11 +403,11 @@ footer {
     100% {
       transform: translate(-100%, 0);
     }
-  }
+  } */
 
   .streaming-options{
     display: none;
-    background: black;
+    /* background: black; */
 }
 
 
