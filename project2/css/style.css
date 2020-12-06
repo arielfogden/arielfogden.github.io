@@ -1,4 +1,7 @@
 /* GLOBAL */
+
+@import url("https://use.typekit.net/pks7vgi.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +11,17 @@
 body {
     background: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;    
     margin: 0;
     font-size: 17px;
     line-height: 1.4rem;
 }
 
 h1{
-    font-size: 2.5rem;
-    line-height: 2.6rem;
+    font-size: 2.6rem;
+    line-height: 2.9rem;
     font-weight: 400;
 }
 
@@ -44,16 +49,23 @@ a {
 }
 
 a:hover{
-    color: yellow;
+    color: gold;
 }
 
 button {
-    background: yellow;
+    background: gold;
     color: black;
     font-size: 17px;
     border: none;
     width: 160px;
     height: 40px;
+}
+
+button:hover{
+    background: black;
+    color: gold;
+    border: 1px solid gold;
+    cursor: pointer;
 }
 
 
@@ -205,12 +217,12 @@ nav {
 
 hr {
     border: none;
-    border-top: 2px solid yellow;
+    border-top: 2px solid gold;
    
 }
 
 #home-news-title{
-    color: yellow;
+    color: gold;
 
 }
 
@@ -296,7 +308,7 @@ footer {
     display: inline-block;
     width: 100%;
     
-    color: yellow;
+    color: gold;
 }
 
 .copyright{
@@ -308,6 +320,15 @@ footer {
     float: right;   
     width: 50%;
     text-align: right;
+    padding-bottom: 1rem;
+}
+
+.donation a{
+    color: gold;
+}
+
+.donation a:hover{
+    border-bottom: 2px solid gold;
 }
 
 
@@ -320,7 +341,7 @@ footer {
     align-items: center;
     width: 100%;
     background: black;
-    border-top: 2px solid yellow;
+    border-top: 2px solid gold;
     height: 70px;
 
 }
@@ -328,7 +349,7 @@ footer {
 .play-pause {
     width: 70px;
     float: left;
-    border-right: 2px solid yellow;
+    border-right: 2px solid gold;
     font-size: 2rem;
     text-align: center;
     line-height: 4rem;
@@ -344,8 +365,44 @@ footer {
    
 }
 
-.streaming-options{
+
+
+.kmhd-selector a{
+    color: gold;
+    padding-right: 2rem;
+}
+
+.marquee {
+    margin: 0 auto;
+    margin-left: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    max-width: 60%;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marquee2 span {
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  .streaming-options{
     display: none;
+    background: black;
 }
 
 
@@ -357,10 +414,70 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
-/* body {
-    font-size: 23px;
-} */
+body {
+    font-size: 21px;
+    line-height: 1.9rem;
+}
 
+h1{
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* STREAMING BAR */
+
+  
+    .streaming-info {
+        display: flex;
+    
+    }
+
+    .streaming-info p {
+        padding: 0 2rem 0 1rem;
+        margin: auto;
+        font-size: 11px;
+    }
+
+    .streaming-options {
+        display: initial;
+        justify-content: flex-end;
+        align-items: left;
+        /* height: 100%; */
+        margin-left: auto;
+        height: 70px;
+        padding: 1.2rem;
+    }
+
+    .streaming-options p {
+        display: inline-block;
+        justify-content: flex-end;
+        font-size: 1rem;
+        padding-left: 5rem;
+        height: 100%;
+        /* flex-direction: column; */
+    }
+
+   
  /* FOOTER */
 
     .newsletter-signup {
@@ -428,11 +545,14 @@ footer {
     .visualizer {
         display: none;
     }
+
     .home-events {
+        order: 2;
         width: 40%;
     }
 
     .home-news {
+        order: 1;
         width: 60%;
     }
 
@@ -449,6 +569,7 @@ footer {
         display: flex;
         margin-bottom: 5rem;
     }
+
     .news-block{
         flex: 50%;
     }
@@ -458,11 +579,11 @@ footer {
         order: 2;
         /* display: flex; */
     }
+
     .feature-image {
         order: 1;
         padding: 2vh;
-        width: 70%;
-        
+        width: 70%; 
     }
 
     .article-main {
@@ -473,11 +594,28 @@ footer {
 
     .image-wrapper {
         display: flex;
-        width: 40%;
         margin: auto;
+        padding-bottom: 1rem;
+    }
+
+    .article-image {
+        width: 60%;
+        padding-left: 5rem;
     }
 
     .article-caption {
-        padding: 4rem;
+        width: 30%;
+        padding: 4rem 0;
+        margin: auto 0;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .article-meta {
+        padding-bottom: 1.2rem;
+    }
+
+    #article-1-hero {
+        padding: 5rem;
     }
 }
