@@ -189,16 +189,44 @@ ul{
 }
 
 #image-secondary{
-    max-width: 13em;
-    max-height: 18em;
+    /* max-width: 13em;
+    max-height: 18em; */
+    max-width: 30%;
+    max-height: 80%;
     padding-right: 15em;
     padding-top: 2em;
 }
 
 #image-main{
-    max-width: 20em;
-    max-height: 30em;
+    /* max-width: 20em;
+    max-height: 30em; */
+    max-width: 60%;
+    max-height: 90%;
 }
+
+#mydiv {
+    position: absolute;
+    /* z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center; */
+  }
+  
+  /* #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  } */
+
+  #mydiv2 {
+    position: absolute;
+    z-index: 0;
+    /* background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center; */
+  }
 
 
 
